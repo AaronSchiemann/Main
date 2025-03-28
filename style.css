@@ -1,0 +1,89 @@
+body.cv-body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background-color: #2b2d31;
+  color: #e3e5e8;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.bubbles {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.bubbles span {
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  background: rgba(155, 93, 229, 0.15);
+  animation: float 20s linear infinite;
+  bottom: -150px;
+}
+
+@keyframes float {
+  0% { transform: translateY(0) scale(1); }
+  100% { transform: translateY(-1000px) scale(0.5); }
+}
+
+.cv-wrapper {
+  position: relative;
+  z-index: 1;
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.cv-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #9b5de5;
+  margin-bottom: 1rem;
+}
+
+.cv-grid {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.cv-left, .cv-right {
+  flex: 1;
+  min-width: 280px;
+}
+
+h1, h2, h3 {
+  color: #9b5de5;
+}
+
+a {
+  color: #e3e5e8;
+  text-decoration: underline;
+}
+
+.job, .edu {
+  margin-bottom: 2rem;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
