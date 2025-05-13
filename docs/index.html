@@ -1,12 +1,69 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meine Webseite</title>
-  <link href="style.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aaron Schiemann – Digitale Projekte mit Sinn.</title>
+  <link href="../dist/output.css" rel="stylesheet" />
 </head>
-<body class="bg-white text-gray-900">
-  <h1 class="text-4xl font-bold text-center mt-10">Willkommen auf meiner Website</h1>
+<body class="min-h-screen flex flex-col bg-gradient-to-b from-white to-gray-100 text-gray-900 font-sans leading-relaxed">
+  <header class="p-6 shadow-md bg-white">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-blue-600">Aaron Schiemann</h1>
+      <nav class="space-x-4 text-sm">
+        <a href="index.html" class="hover:underline">Start</a>
+        <a href="projekte.html" class="hover:underline">Projekte</a>
+        <a href="lebenslauf.html" class="hover:underline">Lebenslauf</a>
+        <a href="social.html" class="hover:underline">Social</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container max-w-4xl mx-auto px-6 py-12 text-center flex-grow">
+    <h2 class="text-4xl font-bold mb-4">Willkommen auf meiner persönlichen Website</h2>
+    <p class="text-lg text-gray-700 mb-8">
+      Von smarten Projekten bis zum Lebenslauf – alles, was mich antreibt.
+    </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-10">
+          <!-- Social Media -->
+          <div class="p-[4px] rounded-2xl animate-gradient-border bg-gradient-to-r from-orange-600 via-red-500 to-purple-600 bg-size-200 shadow-lg">
+            <div class="bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl p-6 h-full flex flex-col justify-between">
+              <div>
+                <h2 class="text-xl font-semibold mb-2">🌐 Social Media</h2>
+                <p class="text-gray-600 mb-4">Wenn Sie mehr über mich erfahren möchten, besuchen Sie gerne meine Profile.</p>
+              </div>
+              <a href="#" class="mt-auto inline-block px-5 py-2 rounded-full font-medium bg-gradient-to-r from-pink-500 to-red-500 text-white text-center shadow hover:scale-105 transition">Ansehen</a>
+            </div>
+          </div>
+
+          <!-- Lebenslauf -->
+          <div class="p-[4px] rounded-2xl animate-gradient-border bg-gradient-to-r from-lime-400 via-emerald-400 to-teal-300 bg-size-200 shadow-lg">
+            <div class="bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl p-6 h-full flex flex-col justify-between">
+              <div>
+                <h2 class="text-xl font-semibold mb-2">📄 Lebenslauf</h2>
+                <p class="text-gray-600 mb-4">Überzeugen Sie sich selbst davon, ob meine Kompetenzen zu Ihren Anforderungen passen.</p>
+              </div>
+              <a href="#" class="mt-auto inline-block px-5 py-2 rounded-full font-medium bg-green-500 text-white text-center shadow hover:scale-105 transition">Ansehen</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projekte-Kachel über gesamte Breite -->
+        <div class="p-[4px] rounded-2xl animate-gradient-border bg-gradient-to-r from-cyan-400 via-indigo-500 to-blue-700 bg-size-200 shadow-lg">
+          <div class="bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl p-6 flex flex-col justify-between">
+            <div>
+              <h2 class="text-xl font-semibold mb-2">🧠 Projekte</h2>
+              <p class="text-gray-600 mb-4">Entdecken Sie eine Auswahl meiner innovativen und praxisnahen Projekte.</p>
+            </div>
+            <a href="#" class="mt-auto inline-block px-5 py-2 rounded-full font-medium bg-gradient-to-r from-indigo-500 to-purple-500 text-white text-center shadow hover:scale-105 transition">Ansehen</a>
+          </div>
+        </div>
+    </div>
+  </main>
+
+  <footer class="text-center text-sm text-gray-400 py-6">
+    © 2025 Aaron Schiemann – Alle Rechte vorbehalten.
+  </footer>
 </body>
 </html>
